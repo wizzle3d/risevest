@@ -1,0 +1,374 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: auto;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.144);
+  background: #d3d3d3;
+  border-radius: 2px;
+}
+::-webkit-scrollbar-thumb {
+  background: #2fbac293;
+  border-radius: 10px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+header {
+  width: 1020px;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+header nav {
+  display: flex;
+  float: right;
+  justify-content: center;
+  margin: auto;
+  margin-right: 0px;
+}
+.link {
+  margin: 17px 23px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  color: #07969e;
+  text-decoration: none;
+}
+.dropdown-link {
+  margin: 7px 0px;
+  font-size: 16px;
+  background: none;
+  border: none;
+  color: #07969e;
+  text-decoration: none;
+}
+#mobilenav-toggle {
+  display: none;
+  float: left;
+  margin-top: 29px;
+  color: #07969e;
+  font-size: 23px;
+  cursor: pointer;
+}
+#mobilenav {
+  display: none;
+  position: fixed;
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  left: 0;
+}
+.mobilenav-header {
+  width: 90%;
+  height: 80px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.mobile-menu {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-direction: column;
+}
+.drop-down {
+  position: absolute;
+  margin-top: 35px;
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  background-color: white;
+  border-radius: 7px;
+  box-shadow: 0px 4px 5px 0px #00000018;
+}
+.mobile-drop-down {
+  display: flex;
+  flex-direction: column;
+  padding: 17px 20px 0px 20px;
+}
+.container {
+  width: 1020px;
+  margin: auto;
+}
+.container-2 {
+  width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.review-wrapper {
+  width: 95%;
+  margin: auto;
+  padding-top: 40px;
+  overflow-x: auto;
+}
+.section-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 70px;
+}
+.showcase {
+  width: 480px;
+}
+.asset-section {
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 70px;
+  margin-bottom: 100px;
+}
+.section-2 {
+  width: 70%;
+  margin: auto;
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-3 {
+  margin: 300px 0px;
+  text-align: center;
+}
+.sec-bg {
+  background-color: #e7f5f5;
+  margin-top: 70px;
+  padding: 50px 60px 60px 60px;
+  border-radius: 20px;
+  overflow-y: hidden;
+  height: 300px;
+  margin-bottom: 100px;
+  margin-top: 200px;
+}
+.float-right {
+  float: right;
+}
+.float-left {
+  float: left;
+}
+.content-frame {
+  width: 500px;
+}
+.content-frame2 {
+  width: 460px;
+}
+.bg-heading {
+  font-size: 55px;
+  color: #07969e;
+  margin: 0;
+}
+.sm-heading {
+  font-size: 30px;
+}
+.avatar-grp {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  height: 40px;
+  justify-content: space-between;
+}
+.app-store {
+  display: flex;
+}
+.app-link {
+  background-color: #2d2d2d;
+  margin: 20px 15px 20px 0px;
+  width: 180px;
+  height: 50px;
+  padding: 8px 4px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  border: none;
+}
+.phone-img {
+  -webkit-filter: drop-shadow(0px 0px 9px rgba(34, 34, 34, 0.178));
+  filter: drop-shadow(0px 0px 9px rgba(34, 34, 34, 0.178));
+}
+.review-box {
+  position: relative;
+  background-color: white;
+  box-shadow: 0px 5px 7px 10px #07979e17;
+  width: 32%;
+  padding: 2px 20px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  min-height: 250px;
+}
+.asset-box {
+  width: 32%;
+  padding-top: 120px;
+  background-color: #fff4f0;
+  box-sizing: border-box;
+  border-radius: 16px;
+  box-shadow: 0px 0px 1px 1px #00000015;
+}
+.asset-img {
+  position: absolute;
+  left: 0;
+  top: -60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.asset-img img {
+  border-radius: 50%;
+  border: 20px solid white;
+}
+.asset-bottom {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  margin: auto;
+  bottom: 20px;
+}
+.asset-inner-box {
+  position: relative;
+  width: 100%;
+  background-color: white;
+  height: 100%;
+  padding: 60px 20px 20px 20px;
+  border-radius: 16px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.green-btn {
+  color: white;
+  background-color: #07969e;
+  border: none;
+  padding: 15px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.light-green-btn {
+  color: rgb(39, 39, 39);
+  background-color: #a0dde2;
+  font-weight: 600;
+  border: none;
+  padding: 15px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.tg-paragh {
+  width: 600px;
+  margin: auto;
+  text-align: center;
+}
+footer {
+  width: 1020px;
+  height: 80px;
+  margin: auto;
+  margin-bottom: 170px;
+  display: flex;
+  justify-content: space-between;
+}
+footer h5 {
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.footer-link {
+  color: #2d2d2d;
+  text-decoration: none;
+  margin: 10px 0px;
+  font-size: small;
+}
+@media screen and (max-width: 1100px) {
+  header,
+  footer {
+    width: 90%;
+  }
+  .container {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 820px) {
+  header nav {
+    display: none;
+  }
+  .sec-bg {
+    display: flex;
+    flex-direction: column;
+    min-height: 500px;
+    padding: 0;
+  }
+  .float-left,
+  .float-right {
+    float: none;
+    margin: auto;
+  }
+  footer {
+    flex-wrap: wrap;
+  }
+  .footer-nav {
+    width: 40%;
+  }
+  #mobilenav {
+    display: block;
+  }
+  #mobilenav .link {
+    margin: 17px 0px;
+  }
+  #mobilenav-toggle {
+    display: block;
+  }
+  .section-1 {
+    margin-top: 0;
+    flex-direction: column;
+  }
+  .section-2 {
+    width: 100%;
+    margin-top: 20px;
+  }
+  .asset-section {
+    flex-direction: column;
+  }
+  .asset-box {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .flex-rev {
+    flex-direction: column-reverse;
+  }
+  .showcase {
+    width: 350px;
+    margin: auto;
+  }
+  .app-store {
+    display: flex;
+    justify-content: center;
+  }
+  .content-frame,
+  .content-frame2 {
+    width: 90%;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  .tg-paragh {
+    width: 70%;
+  }
+}
